@@ -6,11 +6,10 @@ fi
 
 echo "Scaffolding your app using Docker... This will take a while..."
 sleep 1
-sudo docker-compose build
 sudo docker-compose up -d
 sudo docker-compose run --rm composer install
 sudo docker-compose run --rm artisan migrate:fresh
-sudo docker-compose run --rm artisan db:seed
+sudo docker-compose run --rm artisan migrate:fresh
 
 export $(grep -v '#.*' .env | xargs)
 echo "\nUnifiedtransform is ready on localhost:$DOCKER_WEBSERVER_HOST and localhost:$DOCKER_PHPMYADMIN_HOST for the PHPMyAdmin\n"
