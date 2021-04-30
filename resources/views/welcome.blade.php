@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{config('app.name')}}</title>
+        <title>{{config('app.name')}} Tuan LA</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -78,7 +78,7 @@
             <div class="content">
                 <div class="m-b-md">
                     <!-- {{config('app.name')}} -->
-                    <img src="appname.svg" width="500">
+                    <img src="https://izisoft.io/wp-content/uploads/2020/02/logoizi.png" width="500">
                 </div>
                 <!-- <p style="font-size: 25px;">@lang('Makes managing schools an amazing experience')</p> -->
                 <div class="links">
@@ -89,7 +89,7 @@
                             <a href="{{ route('login') }}">@lang('Login')</a>
                         @endauth
                     @endif
-                    <a href="https://github.com/changeweb/Unifiedtransform">
+                    <a href="https://izisoft.io">
                         <i class="fa fa-github"></i>
                         @lang('GitHub')
                     </a>

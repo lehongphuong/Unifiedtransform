@@ -9,7 +9,9 @@ sleep 1
 sudo docker-compose build
 sudo docker-compose up -d
 sudo docker-compose run --rm composer install
+sleep 1
 sudo docker-compose run --rm artisan migrate:fresh
+sleep 1
 sudo docker-compose run --rm artisan db:seed
 
 export $(grep -v '#.*' .env | xargs)
